@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conhecendo o Linux</title>
+    <link rel="icon" href="img/iconLinux.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        .spanHist{
+            color: beige;
+       
+        }
+ 
+        .jumbotron{
+            background-color: black;
+            color: whitesmoke;
+            line-height: 30px;
+        }
+ 
+        .display-4{
+            color: beige;
+        }
+ 
+        .custom-bg{
+            background-color: black;5
+        }
+ 
+        .nav-link{
+            color: white;
+        }
+ 
+        #navliim{
+            color: white;
+        }
+
+        footer{
+          text-align: center;
+        }
+
+        html{
+          scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg" id="navbar11">
+        <img src="img/linux icon.png" width="50" height="50">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="navliim" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="navliim" href="#historia">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navliim" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" id="navliim" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Algo mais aqui</a>
+              </div>
+            </li>
+            <li class="nav-item" id="navliim">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+ 
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/linuxBackground1.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/linuxCarrosel2.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/linuxCarrosel3.jpg" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+ 
+      
+ 
+      <div class="jumbotron">
+        <h1 id="historia" class="display-4">A história do Linux</h1>
+        <p class="lead">Do Hobby de um Estudante à Revolução do Código Aberto: A História do Linux</p>
+        <hr class="my-4">
+        <p>
+            O Linux é um sistema operacional de código aberto que desempenha um papel fundamental no mundo da tecnologia. Sua história é uma jornada marcada pela colaboração e pela paixão pela liberdade do software.
+           
+            O Início
+            Tudo começou em 1991, quando um jovem estudante finlandês chamado Linus Torvalds começou a trabalhar em um novo sistema operacional como um hobby. Ele estava insatisfeito com as opções disponíveis na época e decidiu criar algo melhor. Linus começou a desenvolver o núcleo (kernel) do sistema e o chamou de "Linux".
+           
+            A Revolução Open Source
+            O que tornou o Linux especial foi o seu modelo de desenvolvimento de código aberto. Linus Torvalds e outros programadores de todo o mundo trabalharam juntos para melhorar o sistema. Eles compartilharam seu código livremente, permitindo que qualquer pessoa o usasse, estudasse, modificasse e redistribuísse.
+           
+            Crescimento da Comunidade
+            O Linux rapidamente atraiu a atenção de entusiastas de computadores e empresas. Uma comunidade global se formou, contribuindo com código, correções de bugs e recursos. Empresas como a IBM, a Red Hat e a Google também adotaram o Linux em seus produtos e serviços.
+           
+            Diversidade de Distribuições
+            Uma característica única do Linux é a variedade de distribuições (distros) disponíveis. Cada distro é uma versão personalizada do sistema operacional que atende a necessidades específicas. Algumas das distros mais populares incluem o Ubuntu, o Fedora e o Debian.
+           
+            Sucesso e Ubiquidade
+            Hoje, o Linux é onipresente. Você o encontra em smartphones (Android), servidores, sistemas embarcados, supercomputadores e até mesmo em dispositivos domésticos. Ele é conhecido por sua estabilidade, segurança e flexibilidade.
+           
+            Filosofia do Software Livre
+            O sucesso do Linux também promoveu a filosofia do software livre. Isso impulsionou o movimento de código aberto, no qual o código-fonte é disponibilizado gratuitamente para que todos possam usar e melhorar.
+           
+            Conclusão
+            A história do Linux é um testemunho do poder da colaboração e da paixão pela liberdade do software. Ele se tornou um pilar fundamental da computação moderna e continuará a desempenhar um papel importante no futuro. <br> <br> <br> <br> <br> <br>
+       
+       
+            <div>
+ 
+                <h1 class="display-4">O que é o linux?</h1>
+                <p>O Linux é um sistema operacional de código aberto, o que significa <br> que seu código-fonte é acessível a todos para visualização, <br> modificação e distribuição. Ele foi criado por Linus Torvalds em 1991 e <br> é construído em torno de um kernel altamente flexível. <br> <br> <br> </p>
+ 
+                <h1 class="display-4">O que é uma distribuição</h1>
+                <p>Uma distribuição Linux, ou "distro", é uma versão personalizada do <br> sistema operacional Linux que inclui o kernel do Linux, bem como um <br> conjunto específico de programas, bibliotecas e ferramentas. <br> Algumas distribuições populares incluem o Ubuntu, Fedora e Debian.<br> <br> <br> </p>
+
+                <h1 class="display-4">Linux é melhor que Windows</h1>
+                <p>A resposta a essa pergunta depende das necessidades e preferências individuais. <br>O Linux é conhecido por sua estabilidade, segurança e personalização. É uma ótima escolha para desenvolvedores, <br>administradores de sistema e entusiastas da tecnologia. No entanto, a escolha entre o Linux e o Windows <br>deve ser baseada em seus objetivos e requisitos específicos.<br> <br> <br> </p>
+                
+                <h1 class="display-4">Como faço para instalar o Linux?</h1>
+                <p>A instalação do Linux é um processo relativamente simples. <br>Você pode criar uma mídia de instalação, como um pendrive bootável,<br>e seguir as instruções da distribuição de sua escolha.<br> <br> <br> </p>
+
+                <h1 class="display-4">Posso testar o Linux sem instalá-lo?</h1>
+                <p>Sim, muitas distribuições Linux oferecem a opção de "executar a partir do pendrive" <br>ou "testar antes de instalar". Isso permite que você experimente o sistema <br>sem fazer alterações no seu computador.<br> <br> <br> </p>
+
+                <h1 class="display-4">Preciso apagar meu Windows para instalar o Linux?</h1>
+                <p>Não é necessário apagar o Windows para instalar o Linux. <br>Você pode optar por uma instalação dual-boot, que permite escolher <br>entre os dois sistemas na inicialização.<br> <br> <br> </p>
+
+                <h1 class="display-4">É muito complicado aprender a usar o Linux?</h1>
+                <p>A curva de aprendizado do Linux pode variar, mas muitos usuários acham a transição relativamente tranquila, <br>especialmente com as distribuições amigáveis para iniciantes. <br>Existem muitos recursos disponíveis para aprender a usar o Linux.<br> <br> <br> </p>
+
+                <h1 class="display-4">É verdade que o Linux não pega vírus?</h1>
+                <p>Embora o Linux seja mais seguro em relação a vírus em comparação com o Windows, <br>não é imune a ameaças. No entanto, com boas práticas de segurança e atualizações regulares, <br>os riscos podem ser minimizados.<br> <br> <br> </p>
+
+                <h1 class="display-4">Os softwares de Windows são todos compatíveis com o Linux?</h1>
+                <p>Não, os programas do Windows não são nativamente compatíveis com o Linux. <br>No entanto, muitos programas populares têm equivalentes para Linux e, em alguns casos, <br>é possível executar aplicativos do Windows no Linux usando emuladores ou virtualização.<br> <br> <br> </p>
+                
+                <h1 class="display-4">Como instalo programas no Linux?</h1>
+                <p>O Linux possui sistemas de gerenciamento de pacotes que facilitam a instalação e atualização de programas. <br>Basta usar comandos como "apt", "yum" ou "pacman", dependendo da distribuição.<br> <br> <br> </p>
+
+                <h1 class="display-4">Como sei qual programa no Linux substitui outro no Windows?</h1>
+                <p>Existem muitas alternativas de software para Windows no Linux. <br>Você pode pesquisar comunidades e fóruns de usuários do <br>Linux para obter recomendações específicas para substituições de programas.<br> <br> <br> </p>
+
+                <h1 class="display-4">O que são KDE e Gnome? Qual é melhor?</h1>
+                <p>KDE e Gnome são ambientes de desktop populares para o Linux. <br>A escolha entre eles é uma questão de preferência pessoal, já que ambos <br>oferecem experiências de usuário sólidas e recursos poderosos.<br> <br> <br> </p>
+
+                <h1 class="display-4">Consigo rodar meus jogos no Linux?</h1>
+                <p>O Linux suporta muitos jogos, especialmente com o crescimento do Steam para Linux. <br>No entanto, a compatibilidade varia, e alguns jogos podem exigir esforço adicional para funcionar.<br> <br> <br> </p>
+
+                <h1 class="display-4">O que é “root”?</h1>
+                <p>No Linux, "root" é o superusuário com privilégios administrativos completos. <br>O acesso root deve ser usado com cuidado, pois pode afetar o sistema de maneira crítica.<br> <br> <br> </p>
+
+                <h1 class="display-4">O que são repositórios?</h1>
+                <p>Repositórios são servidores que armazenam pacotes de software. <br>Eles são usados pelos sistemas de gerenciamento de pacotes do Linux para baixar e atualizar programas. <br>Os repositórios são essenciais para manter seu sistema atualizado e seguro.<br> <br> <br> </p>
+
+                <footer>
+                  Gabriel Silva - @copy todos os direitos reservados <br>
+                  Trabalho academico sem fins lucrativos
+                </footer>
+ 
+ 
+ 
+            </div>
+            </p>
+       
+      </div>
+</body>
+</html>
